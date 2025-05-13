@@ -3,10 +3,14 @@
 > **"Statix – Simplify your Linux experience with real-time insights 🚀"**
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
+
 [![Tkinter GUI](https://img.shields.io/badge/GUI-Tkinter-yellowgreen.svg)](https://wiki.python.org/moin/TkInter)
+
 [![psutil](https://img.shields.io/badge/psutil-5.9.0-green.svg)](https://pypi.org/project/psutil/)
+
 [![matplotlib](https://img.shields.io/badge/matplotlib-3.5.1-red.svg)](https://matplotlib.org/)
-[![License: MIT](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE)
+
+[![License: MIT](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE)]\(LICENSE)
 
 ---
 
