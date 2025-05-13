@@ -1,4 +1,4 @@
-# 🧠 Linux Assistant (Statix)
+# 🤖 Linux Personal Assistant (Statix)
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
 [![Tkinter GUI](https://img.shields.io/badge/GUI-Tkinter-yellowgreen.svg)](https://wiki.python.org/moin/TkInter)
@@ -69,7 +69,7 @@ Key capabilities:
 
 ---
 
-## 🛠 Technology Stack
+## 🛠️ Technology Stack
 
 | Component          | Technology         | Purpose                        |
 | ------------------ | ------------------ | ------------------------------ |
@@ -83,7 +83,7 @@ Key capabilities:
 
 ---
 
-## ⚙ Installation
+## ⚙️ Installation
 
 ### Prerequisites
 
@@ -111,7 +111,7 @@ chmod +x linux_assistant.py
 
 ---
 
-## 🧪 Usage
+## 🎬 Usage
 
 Launch the assistant:
 
@@ -127,6 +127,27 @@ Command-line options:
 ./linux_assistant.py --debug         # Print debug logs
 ./linux_assistant.py --help          # Show help message
 ```
+
+---
+
+---
+
+## 📸 UI Screenshots
+
+> ![Theme 1](screenshots/theme1.png)
+> Theme preview 1
+
+> ![Theme 2](screenshots/theme2.png)
+> Theme preview 2
+
+> ![Theme 3](screenshots/theme3.png)
+> Theme preview 3
+
+> ![Create File Dialog](screenshots/dialog_create_file.png)
+> Dialog for "Create File" operation
+
+> ![Reboot Confirmation Dialog](screenshots/dialog_reboot.png)
+> Confirmation dialog for system reboot
 
 ---
 
@@ -149,10 +170,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-## 🙌 Acknowledgements
+## 🙏 Acknowledgements 🎉
 
-* Inspired by: `htop`, `glances`, `bpytop`
-* GUI design influenced by modern dashboard patterns
-* Thanks to the Linux sysadmin community
+Thank you to the open-source Linux community and the tools that inspired this project.
 
 ---
