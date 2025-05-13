@@ -144,17 +144,7 @@ chmod +x linux_assistant.py
 ./linux_assistant.py --help          # Display usage information
 ```
 
-### Keyboard Shortcuts
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl+T` | Switch theme |
-| `Ctrl+R` | Refresh displays |
-| `Ctrl+L` | Clear terminal |
-| `F5` | Update system information |
-| `F11` | Toggle fullscreen |
-| `Esc` | Exit fullscreen/close dialogs |
 
----
 
 ## 📂 Working with Files
 
