@@ -1,4 +1,5 @@
 # 🧠 Linux Assistant (Statix)
+
 [![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
 [![Tkinter GUI](https://img.shields.io/badge/GUI-Tkinter-yellowgreen.svg)](https://wiki.python.org/moin/TkInter)
 [![psutil](https://img.shields.io/badge/psutil-5.9.0-green.svg)](https://pypi.org/project/psutil/)
@@ -8,277 +9,150 @@
 ---
 
 ## 🚀 Project Overview
-**Linux Assistant (Statix)** is an advanced desktop utility designed specifically for Linux users who demand powerful system monitoring and management in a sleek, intuitive interface. It seamlessly combines **real-time resource monitoring**, **integrated terminal functionality**, **file operations**, and **system management tools** into a single, customizable dashboard.
 
-This comprehensive toolkit empowers you with:
-- 🔍 Real-time CPU, RAM, and disk usage visualizations with historical trends
-- 📊 Multi-layered interactive charts with precise metrics
-- 🖥️ Embedded terminal with command execution and output capture
-- 📁 Streamlined file and directory management operations
-- 🎨 Five professionally designed themes for optimal visibility in any environment
-- 📅 Integrated calendar system with event tracking capabilities
-- 🌐 Network monitoring with bandwidth usage statistics
-- 💾 User configuration persistence across sessions
+**Linux Assistant (Statix)** is a comprehensive desktop utility for Linux power users. It integrates **real-time system monitoring**, **embedded terminal**, **file operations**, **calendar scheduling**, and **system controls** into a unified, themeable dashboard.
+
+Key capabilities:
+
+* 🔍 Real-time CPU, RAM, and disk usage with dynamic visualizations
+* 📊 Interactive multi-ring donut charts and line plots for historical trends
+* 🖥️ Embedded terminal for running commands and viewing outputs
+* 📁 File and directory management (create, delete, navigate, upload)
+* 🎨 Four professional themes: Dark, Light, Hacker, Glass
+* 📅 Built-in calendar view for month and date lookup
+* ⚙️ Quick-access system commands (reboot, service checks)
+* 🌐 Raw network interface overview via embedded command output
 
 ---
 
 ## ✨ Key Features
 
-### ⚙️ System Resource Monitoring
-- **Dynamic Multi-Ring Donut Chart**
-  - Concentric rings display CPU, RAM, and disk utilization
-  - Color-coded segments with real-time percentage readouts
-  - Smooth animations during state transitions
-  
-- **Dual Performance Line Charts**
-  - Synchronized CPU and memory utilization trend lines
-  - Configurable history length (30-120 seconds)
-  - Interactive tooltips showing precise values at any point
+### ⚙️ Resource Monitoring
+
+* **Multi-Ring Donut Chart**: Concentric rings for CPU, RAM, Disk percentages
+* **Dual Line Charts**: Rolling history for CPU and RAM over the last 60 samples
+* **Legend Labels**: Real-time numeric readouts updated every second
 
 ### 🧾 Command Center
-- **Integrated Terminal Environment**
-  - Execute system commands directly from the interface
-  - Full command history with searchable output
-  - Syntax highlighting for common Linux commands
-  - Command completion suggestions
+
+* Integrated terminal panel
+* Execute common Linux commands (top, free, df, ip)
+* Threaded execution to keep UI responsive
 
 ### 🗂 File Management
-- **Complete File Operations**
-  - Create/delete files and directories with validation
-  - Upload external files to working directory
-  - Copy/move operations with progress tracking
-  - Quick navigation to common system locations
 
-### 🎨 UI Customization
-- **Professional Theme System**
-  - Choose from five meticulously crafted themes:
-    - `Dark` - Elegant dark mode for reduced eye strain
-    - `Light` - High-contrast clarity for daylight environments
-    - `Hacker` - Classic terminal-inspired green-on-black aesthetic
-    - `Glass` - Modern translucent blue tones for a fresh appearance
-    - `Dracula` - Popular dark theme with vibrant accent colors
-  - Theme settings persist between sessions
+* Create and delete files/directories with confirmation dialogs
+* Upload external files via file chooser
+* Basic file system navigation commands wrapped in GUI buttons
 
-### 📅 Calendar & Scheduling
-- **Interactive Calendar Widget**
-  - Month view with current date highlighting
-  - Event creation and management
-  - Integration with system notifications
-  
-### 🔄 System Management
-- **Advanced System Controls**
-  - Safe system reboot with confirmation dialog
-  - Service status monitoring and control
-  - Resource usage alerts and notifications
-  - Graceful application shutdown with state preservation
+### 🎨 Themes
 
-### 🌐 Network Monitoring
-- **Real-time Network Diagnostics**
-  - Current IP configuration display
-  - Upload/download bandwidth graphs
-  - Connected device discovery
-  - Interface status monitoring
+* **Dark**: Low-light friendly
+* **Light**: High-contrast clarity
+* **Hacker**: Green-on-black retro style
+* **Glass**: Modern translucent palette
+* Theme persists across sessions (future enhancement)
+
+### 📅 Calendar
+
+* Popup month view for the current year/month
+* Read-only calendar rendered in a scrollable text widget
+
+### 🔄 System Controls
+
+* Safe system reboot with confirmation
+* Placeholder for future service status controls
+
+### 🌐 Network Info
+
+* Raw output of `ip -brief addr` in terminal panel
 
 ---
 
 ## 🛠 Technology Stack
 
-| Component | Technology | Purpose |
-|-----------|------------|---------|
-| Core Engine | `Python 3.9+` | Application framework and logic |
-| User Interface | `Tkinter/ttk` | Cross-platform GUI components |
-| Data Visualization | `Matplotlib` | Interactive charts and graphs |
-| System Monitoring | `psutil` | Resource metrics collection |
-| Mathematical Operations | `NumPy` | Data processing for visualizations |
-| System Integration | `subprocess/os` | Command execution and file operations |
-| Configuration | `json` | User preferences storage |
-| Network Analysis | `socket/psutil` | Network metrics and diagnostics |
+| Component          | Technology         | Purpose                        |
+| ------------------ | ------------------ | ------------------------------ |
+| Core Engine        | Python 3.9+        | Application logic              |
+| GUI Framework      | Tkinter (ttk)      | Cross-platform widgets         |
+| Charts & Plots     | Matplotlib         | Donut and line chart rendering |
+| System Metrics     | psutil             | CPU, RAM, disk usage           |
+| Data Handling      | NumPy              | Historical buffer management   |
+| Subprocess Control | subprocess, os     | Command execution              |
+| Calendar Rendering | calendar, datetime | Month view generation          |
 
 ---
 
 ## ⚙ Installation
 
 ### Prerequisites
-- Python 3.9 or higher
-- Linux-based operating system
-- Administrative privileges for system monitoring
 
-### Setup Instructions
+* Python 3.9 or higher
+* Linux OS with GUI support
+* `pip` and `git` installed
 
-1. **Clone the Repository**
+### Setup
+
 ```bash
-git clone https://github.com/yourusername/linux-assistant.git
-cd linux-assistant
-```
+# Clone the repository
+git clone https://github.com/Ashish-equinox/LinuxPersonalAssistant.git
+cd LinuxPersonalAssistant
 
-2. **Create Virtual Environment (Recommended)**
-```bash
+# (Optional) Create a virtual environment
 python3 -m venv venv
 source venv/bin/activate
-```
 
-3. **Install Dependencies**
-```bash
+# Install dependencies
 pip install -r requirements.txt
-```
 
-4. **Set Execution Permissions**
-```bash
+# Make script executable
 chmod +x linux_assistant.py
 ```
 
 ---
 
-## 🧪 Usage Guide
+## 🧪 Usage
 
-### Starting the Application
+Launch the assistant:
+
 ```bash
 ./linux_assistant.py
 ```
 
-### Command Line Options
+Command-line options:
+
 ```bash
-./linux_assistant.py --theme=dark    # Start with specific theme
-./linux_assistant.py --no-history    # Disable history tracking
-./linux_assistant.py --debug         # Enable debug output
-./linux_assistant.py --help          # Display usage information
+./linux_assistant.py --theme=Light    # Start with Light theme
+./linux_assistant.py --no-history    # Disable trend history buffer
+./linux_assistant.py --debug         # Print debug logs
+./linux_assistant.py --help          # Show help message
 ```
-
-
-
-## 📂 Working with Files
-
-### Upload Files to Working Directory
-Easily import files into your workspace:
-
-1. Click the `Upload File` button in the Operations panel
-2. Select any file from the file browser dialog
-3. File will be copied to the current working directory
-
-The application implements this functionality using:
-
-```python
-from tkinter import filedialog
-import shutil
-
-def upload_file():
-    src = filedialog.askopenfilename(title="Select file to upload")
-    if src:
-        dest = os.path.join(os.getcwd(), os.path.basename(src))
-        shutil.copy2(src, dest)  # copy2 preserves file metadata
-        self.terminal_output(f"Uploaded: {os.path.basename(src)}")
-```
-
-### File Operations
-- Create text files with optional templates
-- Generate directories with proper permissions
-- Delete files with secure confirmation dialogs
-- Browse system directories with integrated file explorer
 
 ---
 
-## 📸 UI Screenshots
-
-> ![Dashboard View](screenshots/dashboard.png)
-> Main dashboard with resource monitoring and terminal integration
-
-> ![Theme Selection](screenshots/themes.png)
-> Multiple professional themes for any working environment
-
-> ![File Operations](screenshots/file_operations.png)
-> Streamlined file management interface
-
-> ![Calendar View](screenshots/calendar.png)
-> Integrated calendar with event tracking
-
-> ![Network Monitor](screenshots/network.png)
-> Real-time network statistics visualization
-
----
-
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```
-linux-assistant/
-├── linux_assistant.py       # Main application file
+LinuxPersonalAssistant/
+├── linux_assistant.py       # Main application
 ├── README.md                # Project documentation
-├── requirements.txt         # Dependencies list
-├── resources/               # Application resources
-│   ├── icons/               # UI icons
-│   └── themes/              # Theme definitions
-├── screenshots/             # UI screenshots
-│   ├── dashboard.png
-│   ├── themes.png
-│   ├── file_operations.png
-│   ├── calendar.png
-│   └── network.png
-├── docs/                    # Extended documentation
-│   ├── user_guide.md
-│   └── development.md
-└── LICENSE                  # MIT License file
+├── requirements.txt         # Python dependencies
+├── LICENSE                  # MIT License
+└── resources/               # (Future) icons and theme files
 ```
-
----
-
-## 🛠 Configuration
-
-The application stores user preferences in `~/.statix/config.json` with the following structure:
-
-```json
-{
-  "theme": "Dark",
-  "history_length": 60,
-  "update_interval": 1000,
-  "startup_commands": ["uptime", "free -m"],
-  "default_directory": "~/Documents",
-  "show_network_monitor": true
-}
-```
-
----
-
-## 🔧 Development
-
-### Building from Source
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/linux-assistant.git
-
-# Install development dependencies
-pip install -r requirements-dev.txt
-
-# Run tests
-pytest
-
-# Build standalone package
-pyinstaller --onefile linux_assistant.py
-```
-
-### Contributing
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-name`
-3. Commit changes: `git commit -am 'Add new feature'`
-4. Push to branch: `git push origin feature-name`
-5. Submit a Pull Request
 
 ---
 
 ## 📃 License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
 ## 🙌 Acknowledgements
-- Inspired by classic Linux tools like `htop`, `glances`, and `bpytop`
-- UI design influenced by modern dashboard frameworks
-- Special thanks to contributors from the Linux sysadmin community
-- Font icons provided by [Font Awesome](https://fontawesome.com/)
 
----
-
-## 📬 Contact & Support
-- Report issues on GitHub: [Issue Tracker](https://github.com/yourusername/linux-assistant/issues)
-- Questions and discussion: [Discussions](https://github.com/yourusername/linux-assistant/discussions)
-- Email: youremail@example.com
+* Inspired by: `htop`, `glances`, `bpytop`
+* GUI design influenced by modern dashboard patterns
+* Thanks to the Linux sysadmin community
 
 ---
